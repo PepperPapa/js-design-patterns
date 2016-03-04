@@ -1,0 +1,46 @@
+html, body {
+  margin: 0 0;
+  width: 100%;
+}
+#cat-container {
+  background-color: #97d579;
+  display: flex;
+  flex-wrap: nowrap;
+}
+#admin {
+  margin: 5px 5px;
+  width: 50%;
+  text-align: center;
+  display: none;
+}
+input[type="text"] {
+  margin: 10px auto;
+  height: 24px;
+  width: 300px;
+  display: block;
+}
+#selected-area {
+  margin: 5px 5px;
+  width: 50%;
+  height: 500px;
+  background-color: #c9a681;
+  text-align: center;
+}
+#selected-cat {
+  max-width: 100%;
+  max-height: 100%;
+  /*display: block;*/
+}
+#cats {
+  margin: 0 auto;
+  width: 90%;
+  list-style-type: none;
+}
+#cats li {
+  display: inline-block;
+  margin: 5px 5px;
+}
+#cats img {
+  width: 100px;
+  height: 100px;
+}
