@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cat Clicker</title>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <div  id="cat" data-bind="with: currentCat">
+      <h1 id="cat-name" data-bind="text: name"></h1>
+      <p id="cat-title" data-bind="text: title"></p>
+      <p id="click-count" data-bind="text: clickCount"></p>
+      <img src="" alt="cute cat"
+           data-bind="click: $parent.incrementClickCount,
+                      attr: {src: imgSrc}">
+    <h2>NickNames:</h2>
+    <ul id="cats" data-bind="foreach: nickNames">
+      <li data-bind="text: $data"></li>
+    </ul>
+  </div>
+  <ul id="allcats" data-bind="foreach: catList">
+    <li class="cats" data-bind="text: name, click: $parent.updateCurrentCat"></li>
+  </ul>
+  <script src="js/knockout-3.4.0.debug.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

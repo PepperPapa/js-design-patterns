@@ -1,0 +1,12 @@
+html, body {
+  margin: 10px 10px;
+  width: 100%;
+}
+#cat {
+  float: left;
+}
+#allcats {
+  list-style-type: square;
+  font-size: 2em;
+  float: left;
+}
