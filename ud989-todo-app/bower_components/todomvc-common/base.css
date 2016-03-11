@@ -282,6 +282,15 @@ label[for='toggle-all'] {
 	text-decoration: line-through;
 }
 
+/* start: my own code by zhongxin*/
+/*#todo-list li.completed label:after {
+	content: '--done';
+	color: #a9a9a9;
+	position: absolute;
+	right: 10px;
+}*/
+/* end: my own code by zhongxin*/
+
 #todo-list li.priority:not(.completed) label {
 	color: #d66;
 }
