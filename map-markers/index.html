@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>map markers</title>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <div id="map"></div>
+  <script>
+    function initMap() {
+      var map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 15,
+        center: {lat: 28.2497179, lng: 113.0958297},
+        disableDefaultUI: true
+      });
+    }
+  </script>
+  <script src="https://maps.googleapis.com/maps/api/js?region=cn&language=zh-CN&
+          key=AIzaSyCNXZsTDX9W9BZixlLpIFB_5ZTjxym7NBk&callback=initMap"
+       async defer></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
