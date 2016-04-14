@@ -6,3 +6,76 @@ html, body {
 #map {
   height: 100%;
 }
+#search-bar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 10;
+  width: 400px;
+  height: 50px;
+  padding: 10px 10px;
+  border: none;
+  text-align: center;
+}
+.bg-blue {
+  background: #5473d1;
+}
+.bg-transparent {
+  background: rgba(0,0,0,0);
+}
+#search-bar input {
+  padding: 10px 10px;
+  width: 376px;
+  height: 29px;
+  border: 1px solid lightgray;
+  border-radius: 4px;
+  box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.1);
+  font-size: 1em;
+}
+input {
+  outline: none;
+}
+#search-list {
+  position: fixed;
+  margin: 0;
+  padding: 80px 0;
+  width: 420px;
+  height: 100%;
+  box-sizing: border-box;
+  top: 0;
+  left: 0;
+  z-index: 9;
+  background: #fff;
+  list-style: none;
+  overflow-y: scroll;
+}
+.show {
+  display: block;
+}
+.hide {
+  display: none;
+}
+.place-item {
+  display: block;
+  margin: 0;
+  padding: 0;
+  height: 80px;
+  border-bottom: 1px solid lightgray;
+  position: relative;
+}
+.li-name {
+  width: 75%;
+  padding: 5px 15px;
+}
+.li-addr {
+  font-style: italic;
+  font-size: 14px;
+  color: gray;
+  width: 75%;
+  padding: 5px 15px;
+}
+.li-img {
+  position: absolute;
+  top: 0;
+  right: 10px;
+}
