@@ -16,6 +16,8 @@ html, body {
   padding: 10px 10px;
   border: none;
   text-align: center;
+  transition-property: left;
+  transition-duration: 0.5s;
 }
 .bg-blue {
   background: #5473d1;
@@ -48,6 +50,27 @@ input {
   background: #fff;
   list-style: none;
   overflow-y: scroll;
+  transition-property: left;
+  transition-duration: 0.5s;
+}
+#fold-search-list {
+  position: fixed;
+  margin: 0;
+  padding: 0;
+  width: 20px;
+  height: 50px;
+  cursor: default;
+  top: 10px;
+  left: 420px;
+  z-index: 12;
+  background: #fff;
+  border: 1px solid lightgray;
+  box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.1);
+  text-align: center;
+  line-height: 50px;
+  font-weight: bold;
+  transition-property: left;
+  transition-duration: 0.5s;
 }
 .show {
   display: block;
